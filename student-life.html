@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Life & Activities — Projects, Sports, Visits | AIS ITI</title>
+  <meta name="description" content="Discover vibrant student life at AIS ITI: Student engineering projects, industrial visits, Vishwakarma Jayanti celebrations, sports tournaments, and technical competitions." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Header Hero -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Campus Culture
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Student Life at AIS ITI
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          From hands-on prototype competitions to industrial study tours, campus athletics, and technical seminars—developing camaraderie, discipline, and pride in vocational craft.
+        </p>
+      </div>
+    </section>
+
+    <!-- Student Life Categories Grid -->
+    <section class="py-20 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- 1. Technical Projects -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Technical Projects" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-sky-500 text-slate-950">Innovation</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Student Capstone Projects</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Final year trainees collaborate across trades to build functional prototypes, such as automated solar lighting rigs, mechanical punching jigs, and custom welding fixtures.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-sky-400 font-semibold border-t border-slate-850">
+              Showcased at regional skill fairs.
+            </div>
+          </div>
+
+          <!-- 2. Industrial Visits -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Industrial Visits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-amber-500 text-slate-950">Industry Exposure</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Factory & Substation Study Tours</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Regular guided field visits to high-voltage electrical substations, automobile manufacturing facilities, and heavy machine shops to witness large-scale industrial operations.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-amber-400 font-semibold border-t border-slate-850">
+              Prepares trainees for plant floor realities.
+            </div>
+          </div>
+
+          <!-- 3. Skill Competitions -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Competitions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-emerald-500 text-slate-950">Excellence</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Skill Meets & Trade Olympiads</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Internal and inter-institute timed competitions testing lathe turning precision, circuit wiring speed, and defect-free welding bead consistency.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-emerald-400 font-semibold border-t border-slate-850">
+              Builds healthy competitive excellence.
+            </div>
+          </div>
+
+          <!-- 4. Sports & Athletics -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Sports Meet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-purple-500 text-white">Athletics</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Annual Sports & Youth Tournaments</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Inter-trade tournaments in volleyball, cricket, tug of war, and badminton that build stamina, discipline, and team spirit among trainees.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-purple-400 font-semibold border-t border-slate-850">
+              Active sports clubs and physical fitness.
+            </div>
+          </div>
+
+          <!-- 5. Vishwakarma Jayanti Celebrations -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Vishwakarma Day" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-yellow-500 text-slate-950">Tradition</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Vishwakarma Jayanti Celebration</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Every year, trainees and instructors clean and worship workshop machinery, instruments, and tools in honor of Lord Vishwakarma, instilling deep reverence for craftsmanship.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-yellow-400 font-semibold border-t border-slate-850">
+              Honoring the dignity of industrial labor.
+            </div>
+          </div>
+
+          <!-- 6. Guest Masterclasses & Seminars -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-56 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Industry Seminars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-cyan-500 text-slate-950">Guest Lectures</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <h3 class="font-heading text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Industry Masterclasses</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Guest sessions delivered by factory maintenance heads, power grid supervisors, and dealership technical managers sharing current industry expectations.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-cyan-400 font-semibold border-t border-slate-850">
+              Direct insights from working supervisors.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Photo Gallery CTA Banner -->
+    <section class="py-16 bg-slate-900 border-b border-slate-800 text-center">
+      <div class="max-w-4xl mx-auto px-4 space-y-4">
+        <h3 class="font-heading text-2xl font-bold text-white">See Real Campus Moments in Our Gallery</h3>
+        <p class="text-xs sm:text-sm text-slate-400">Browse dozens of high-resolution workshop photos, exhibitions, and student life moments.</p>
+        <div class="pt-2">
+          <a href="gallery.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs shadow-md hover:bg-sky-400 transition-all">
+            <span>Explore Campus Photo Gallery</span>
+            <i data-lucide="image" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

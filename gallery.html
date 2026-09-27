@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery & Workshop Showcase — AIS Industrial Training Institute</title>
+  <meta name="description" content="View high-resolution photography of AIS ITI campus, workshops, practical machine bays, student projects, industrial study visits, and annual events." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Visual Tour
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Campus & Workshop Gallery
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          Explore authentic photographs of our practical training bays, precision machine tools, student prototypes, sports tournaments, and campus celebrations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Filtering Toolbar -->
+    <section class="py-6 bg-slate-900 border-b border-slate-800 sticky top-20 z-30 backdrop-blur-md bg-slate-900/95 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4">
+        
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <button type="button" data-filter-gallery="all" class="px-3.5 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-bold transition-all">All Photos</button>
+          <button type="button" data-filter-gallery="workshops" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Workshops</button>
+          <button type="button" data-filter-gallery="students" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Students</button>
+          <button type="button" data-filter-gallery="projects" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Projects</button>
+          <button type="button" data-filter-gallery="campus" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Campus</button>
+          <button type="button" data-filter-gallery="events" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Events</button>
+          <button type="button" data-filter-gallery="activities" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Activities</button>
+        </div>
+
+        <div class="text-xs text-slate-400 font-mono hidden sm:block">
+          Click any image for full-screen view
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Masonry / Responsive Grid -->
+    <section class="py-16 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Injected and managed by js/gallery.js -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      </div>
+    </section>
+
+    <!-- Campus Visit Callout -->
+    <section class="py-16 bg-slate-900 text-center">
+      <div class="max-w-4xl mx-auto px-4 space-y-4">
+        <h3 class="font-heading text-2xl font-bold text-white">Experience It Live in Person</h3>
+        <p class="text-xs sm:text-sm text-slate-400">Photos can only convey so much. Visit our campus to hear the lathe gears and watch real welding arcs in action.</p>
+        <div class="flex justify-center gap-3 pt-2">
+          <button type="button" data-modal-target="enquiry-modal" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs shadow-md hover:bg-sky-400 transition-all">
+            Book Guided Campus Tour
+          </button>
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-800 text-slate-200 font-semibold text-xs border border-slate-700 transition-colors">
+            Contact Admission Desk
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

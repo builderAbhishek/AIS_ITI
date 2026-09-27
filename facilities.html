@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Facilities & Infrastructure — AIS Industrial Training Institute</title>
+  <meta name="description" content="Explore campus facilities at AIS ITI: Workshops, Computer Lab, Technical Library, AV Classrooms, Safety Equipment, RO Water, and Sports Grounds." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Modern Learning Environment
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Campus Facilities
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          Designed specifically for vocational focus, technical discipline, safety, and student well-being.
+        </p>
+      </div>
+    </section>
+
+    <!-- Facilities Grid -->
+    <section class="py-20 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Facility 1: Workshops -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Workshops" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-sky-500 text-slate-950">Practical Bays</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center mb-1">
+                  <i data-lucide="wrench" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">Trade-Specific Workshops</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Individual bays for Electrical, Fitting, Welding, Motor Mechanics, and Electronics. Each bay features dedicated tool cribs and uninterrupted 3-phase industrial power.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Compliant with standard workshop area per trainee norms.
+            </div>
+          </div>
+
+          <!-- Facility 2: Computer Lab -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Computer Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-cyan-500 text-slate-950">Digital Lab</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-1">
+                  <i data-lucide="monitor" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">Hi-Tech Computer & CAD Lab</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Air-conditioned facility with 30 high-speed Intel Core-i5 workstations, high-speed fiber internet, and software suites for CAD drafting, database management, and CBT tests.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Online mock exam testing portal configured for trainees.
+            </div>
+          </div>
+
+          <!-- Facility 3: Technical Library -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Technical Library" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-amber-500 text-slate-950">Resource Center</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-1">
+                  <i data-lucide="book-open" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">Technical Library & Reading Room</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Extensive repository of Bharat Skills curricula, NIMI trade textbooks, engineering drawing reference manuals, and previous year All India Trade Test (AITT) question banks.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Quiet reading desks and digital catalog access.
+            </div>
+          </div>
+
+          <!-- Facility 4: Smart Classrooms -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" alt="Classrooms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-purple-500 text-white">Instruction</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center mb-1">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">AV-Equipped Lecture Halls</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Well-ventilated theory classrooms with digital projection setups for displaying 3D animated machinery cut-sections, engineering drawings, and safety demonstration videos.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Ergonomic student seating and natural ambient lighting.
+            </div>
+          </div>
+
+          <!-- Facility 5: Safety Equipment -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Safety and First Aid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-red-500 text-white">Safety Center</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center mb-1">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">Industrial Safety & First Aid</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  First-aid post with certified medical kit, emergency eyewash stations, CO2 and dry powder fire extinguishers at every bay, and mandatory PPE gear distribution.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Routine quarterly fire drills and safety audit logs.
+            </div>
+          </div>
+
+          <!-- Facility 6: Power & Backup -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar & Backup Power" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-emerald-500 text-slate-950">Unbroken Power</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-1">
+                  <i data-lucide="battery-charging" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">3-Phase Power & Solar Generator</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Heavy-duty industrial power distribution backed by silent on-site diesel generators and a grid-tied rooftop solar installation, ensuring continuous workshop running.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Zero practical downtime due to power interruptions.
+            </div>
+          </div>
+
+          <!-- Facility 7: Water & Sanitation -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="RO Drinking Water & Sanitation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-teal-500 text-slate-950">Hygiene</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center mb-1">
+                  <i data-lucide="droplets" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">RO Drinking Water & Washrooms</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Multi-stage Reverse Osmosis (RO) chilled drinking water dispensers placed across campus floors, alongside separate, well-maintained sanitation facilities for boys and girls.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Daily hygiene audits and clean maintenance schedules.
+            </div>
+          </div>
+
+          <!-- Facility 8: Sports & Campus Area -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden industrial-card flex flex-col justify-between group">
+            <div>
+              <div class="h-52 overflow-hidden bg-slate-950 relative">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Sports Ground" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] font-bold uppercase bg-amber-400 text-slate-950">Recreation</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <div class="w-8 h-8 rounded-lg bg-amber-400/10 text-amber-400 flex items-center justify-center mb-1">
+                  <i data-lucide="activity" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-white">Sports Ground & Common Areas</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Outdoor athletic grounds for volleyball, badminton, and annual youth sports meets, supplemented by a cafeteria and common break zones for student recreation.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 text-[11px] text-slate-500 border-t border-slate-850">
+              Active sports teams competing at regional youth meets.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Transparency Disclaimer -->
+    <section class="py-12 bg-slate-900 border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 text-center space-y-2">
+        <p class="text-xs text-slate-400">
+          <strong>Configurable Notice:</strong> Facilities shown above reflect our standard institute layout. In this commercial template, institutional clients can easily add or edit facilities via <code class="text-sky-400">js/data.js</code> to match their actual campus premises.
+        </p>
+      </div>
+    </section>
+
+    <!-- Visit CTA -->
+    <section class="py-16 bg-slate-950 text-center">
+      <div class="max-w-4xl mx-auto px-4 space-y-4">
+        <h3 class="font-heading text-2xl font-bold text-white">Tour the Campus in Person</h3>
+        <p class="text-xs sm:text-sm text-slate-400">Open for prospective applicants and parents from Monday through Saturday.</p>
+        <div class="flex justify-center gap-3 pt-2">
+          <button type="button" data-modal-target="enquiry-modal" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs shadow-md hover:bg-sky-400 transition-all">
+            Schedule a Visit
+          </button>
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-800 text-slate-200 font-semibold text-xs border border-slate-700 transition-colors">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

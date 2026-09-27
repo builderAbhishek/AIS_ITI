@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Details & Curriculum — AIS Industrial Training Institute</title>
+  <meta name="description" content="Detailed curriculum, syllabus, practical workshop tools, eligibility criteria, and career pathways for vocational ITI trades at AIS ITI." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Dynamic Trade Details Container (Populated by js/trade.js based on URL ?id=tradeId) -->
+    <div id="trade-details-container">
+      <!-- Fallback Loading State -->
+      <div class="py-24 text-center">
+        <div class="inline-block w-8 h-8 border-4 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
+        <p class="mt-4 text-xs font-mono text-slate-400">Loading vocational curriculum and workshop data...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/trade.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

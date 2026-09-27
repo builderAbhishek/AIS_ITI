@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocational Trades Directory — Engineering & Non-Engineering | AIS ITI</title>
+  <meta name="description" content="Explore approved ITI trades at AIS ITI: Electrician, Fitter, Welder, COPA, Motor Mechanic, Electronics Mechanic, Draughtsman Civil, and Plumber. Detailed duration, eligibility, and curriculum." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Approved Vocational Curriculum
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Trades Directory
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          Search, filter, and discover core industrial trades. Compare curriculum durations, eligibility requirements, and practical workshop specializations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter & Search Toolbar -->
+    <section class="py-8 bg-slate-900 border-b border-slate-800 sticky top-20 z-30 backdrop-blur-md bg-slate-900/95 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        
+        <!-- Search bar + select filters row -->
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
+          
+          <!-- Search Input -->
+          <div class="sm:col-span-6 relative">
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="text" 
+              id="trades-search-input" 
+              placeholder="Search by trade name, tool, or keyword (e.g. Electrician, Lathe, CAD, Welding)..." 
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white placeholder-slate-500 text-xs sm:text-sm focus:border-sky-500 focus:ring-1 focus:ring-sky-500" 
+            />
+          </div>
+
+          <!-- Duration filter -->
+          <div class="sm:col-span-3">
+            <select id="trades-duration-filter" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-sky-500">
+              <option value="all">All Durations (1 & 2 Yrs)</option>
+              <option value="1">1 Year Trades</option>
+              <option value="2">2 Year Trades</option>
+            </select>
+          </div>
+
+          <!-- Eligibility filter -->
+          <div class="sm:col-span-3">
+            <select id="trades-eligibility-filter" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-sky-500">
+              <option value="all">All Eligibility Standards</option>
+              <option value="10th">10th Standard Passed</option>
+              <option value="8th">8th Standard Passed</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Category Tag Buttons & Count -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800">
+          <div class="flex flex-wrap items-center gap-1.5 text-xs">
+            <span class="text-slate-400 font-semibold mr-1">Discipline:</span>
+            <button type="button" data-filter-category="all" class="px-3 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-bold transition-all">All Trades</button>
+            <button type="button" data-filter-category="Electrical" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Electrical</button>
+            <button type="button" data-filter-category="Mechanical" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Mechanical</button>
+            <button type="button" data-filter-category="Computer" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Computer</button>
+            <button type="button" data-filter-category="Electronics" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Electronics</button>
+            <button type="button" data-filter-category="Construction" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Construction & Civil</button>
+          </div>
+
+          <div id="trades-count-display" class="text-xs font-mono text-slate-400">
+            Showing all trades
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Directory Grid -->
+    <section class="py-16 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Rendered by js/filters.js -->
+        <div id="trades-directory-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+        <!-- Help box -->
+        <div class="mt-16 p-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <h3 class="font-heading text-lg font-bold text-white">Need Help Choosing the Right Trade?</h3>
+            <p class="text-xs text-slate-400 max-w-xl">
+              Visit our institute campus for a guided tour of all 6 workshop bays and talk directly with trade instructors before registering your preference.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <button type="button" data-modal-target="enquiry-modal" class="px-5 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs shadow-md transition-all">
+              Book Free Counseling
+            </button>
+            <a href="contact.html" class="px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold border border-slate-700 transition-colors">
+              Campus Map
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

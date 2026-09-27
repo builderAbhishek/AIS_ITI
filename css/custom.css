@@ -1,0 +1,231 @@
+/* ==========================================================================
+   AIS INDUSTRIAL TRAINING INSTITUTE - CUSTOM TECHNICAL STYLESHEET
+   Theme: Industrial + Education + Technology
+   Colors: Deep Navy, Charcoal, Electric Blue, Cyan, Warm Amber
+   ========================================================================== */
+
+:root {
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --navy-deep: #070D1E;
+  --navy-dark: #0B132B;
+  --navy-card: #131E3D;
+  --navy-light: #1C2541;
+  --charcoal: #1E293B;
+
+  --blue-primary: #0284C7;
+  --blue-electric: #0EA5E9;
+  --blue-glow: rgba(14, 165, 233, 0.25);
+
+  --teal-accent: #0D9488;
+  --teal-bright: #14B8A6;
+
+  --amber-warm: #F59E0B;
+  --orange-accent: #EA580C;
+
+  --text-primary: #0F172A;
+  --text-muted: #64748B;
+  --bg-surface: #F8FAFC;
+  --border-light: #E2E8F0;
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Technical Grids & Blueprint Backgrounds */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+}
+
+.bg-tech-grid-dark {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-blueprint-pattern {
+  background-color: var(--navy-dark);
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(14, 165, 233, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.04) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(14, 165, 233, 0.18) 0%, transparent 60%);
+}
+
+.bg-radial-amber {
+  background: radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.12) 0%, transparent 50%);
+}
+
+/* Precision Corner Marks (Blueprint look) */
+.blueprint-corner {
+  position: relative;
+}
+.blueprint-corner::before,
+.blueprint-corner::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+}
+.blueprint-corner::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid var(--blue-electric);
+  border-left: 2px solid var(--blue-electric);
+}
+.blueprint-corner::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid var(--amber-warm);
+  border-right: 2px solid var(--amber-warm);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0EA5E9;
+}
+
+/* Card hover micro-interactions */
+.industrial-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+.industrial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(14, 165, 233, 0.3);
+}
+
+.industrial-card-dark {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+.industrial-card-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(14, 165, 233, 0.25);
+  border-color: rgba(14, 165, 233, 0.5);
+}
+
+/* Badges */
+.badge-code {
+  font-family: 'Space Grotesk', monospace;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* Custom Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(7, 13, 30, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease-in-out;
+  backdrop-filter: blur(8px);
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Toast Notification */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+.toast {
+  pointer-events: auto;
+  min-width: 320px;
+  max-width: 440px;
+  background: #0B132B;
+  color: #F8FAFC;
+  border-left: 4px solid var(--blue-electric);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 16px;
+  transform: translateX(120%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.toast.show {
+  transform: translateX(0);
+}
+
+/* Custom Accordion Chevron */
+.faq-toggle svg {
+  transition: transform 0.2s ease-in-out;
+}
+.faq-toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+/* Focus Ring for Accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--blue-electric);
+  outline-offset: 2px;
+}
+
+/* Floating Action Stack */
+.floating-actions {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

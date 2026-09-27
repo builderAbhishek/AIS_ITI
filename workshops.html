@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops & Machinery Labs — AIS Industrial Training Institute</title>
+  <meta name="description" content="Tour our practical training bays: Electrical Workshop, Fitting & Lathe Bay, TIG/MIG Welding Shop, Computer Lab, Automotive Engines, and Electronics Labs." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Header Hero -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Hands-On Infrastructure
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Workshops & Labs
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          Where technical blueprints turn into physical precision. Explore our dedicated, trade-specific practical training bays equipped with modern machines, safety systems, and individual tool stations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Workshops Grid -->
+    <section class="py-20 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="space-y-16">
+          
+          <!-- 1. Electrical Workshop -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Electrical Machine & Wiring Workshop" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-sky-500 text-slate-950">Electrician Trade</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Electrical Machine & Wiring Workshop</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Dedicated practical bay equipped with industrial wiring test booths, AC/DC machine test benches, transformer testing sets, and earth electrode installation simulators. Trainees practice wiring commercial distribution boards and repairing motor windings.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">Motor-Generator Set, 3-Phase Induction Motors, Megger & Earth Resistance Testers, Panel Simulator.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">Distribution wiring, motor speed control, earth testing, troubleshooting panel breakers.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 24 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Isolated Earth Breakers & Rubber Mats</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Mechanical Fitting & Machine Bay -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Mechanical Fitting & Machine Bay" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-amber-500 text-slate-950">Fitter Trade</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Mechanical Fitting & Machine Bay</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Precision workshop featuring 30 heavy-duty bench vices, granite surface plates, precision height gauges, geared drilling machines, and center lathes. Trainees master manual filing tolerances to 0.02 mm and machine precision cylindrical parts.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">Geared Center Lathes, Precision Bench Vices, Radial Drill Press, Vernier Height Gauges.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">Facing, turning, threading, scraping, bench assembly, hydraulic valve fitting.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 24 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Mandatory Eye Protection & Machine Guards</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Welding & Fabrication Bay -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Welding & Fabrication Workshop" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-red-500 text-white">Welder Trade</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Welding & Fabrication Workshop</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Dedicated multi-position welding booths equipped with inverter-based Manual Metal Arc (MMAW), Tungsten Inert Gas (TIG), and Metal Inert Gas (MIG/MAG) machines, motorized oxy-acetylene cutting tables, and heavy air extraction hoods.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">Inverter Arc & TIG Sets, MIG/MAG Wire Feeder Stations, Oxy-Acetylene Torches, Dye Penetrant Testing Rig.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">Flat/vertical/overhead welding, stainless steel TIG joining, gas cutting, weld bead testing.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 20 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Auto-Darkening Helmets & Fume Extraction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Computer & Programming Lab -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Computer & Programming Lab" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-cyan-500 text-slate-950">COPA Trade</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Computer & Programming Lab</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Air-conditioned 30-workstation digital laboratory connected by Gigabit Ethernet LAN with high-speed fiber internet. Trainees practice operating system administration, database queries, spreadsheet automation, web authoring, and CBT test simulations.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">Intel Core-i5 Workstations, Gigabit Managed Switches, Dual Boot Linux/Win, Network Rack Simulator.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">PC assembly/troubleshooting, SQL database commands, spreadsheet data management, HTML/CSS.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 30 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Dedicated Online UPS & Surge Suppressors</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Automotive Engine & Diagnostics Bay -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80" alt="Automotive Engine Bay" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-purple-500 text-white">Motor Mechanic Trade</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Automotive Engine & Diagnostics Bay</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Spacious automobile service area fitted with a 2-post hydraulic vehicle hoist, live cut-away 4-stroke petrol and CRDi diesel test engines, computerized OBD-II multi-brand diagnostic scanner, and hydraulic brake bleeding stations.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">2-Post Vehicle Lift, CRDi Diesel Engine Rig, OBD-II Computerized Scanner, Fuel Injector Calibrator.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">Engine overhaul, clutch & gearbox servicing, ECU fault code analysis, brake hydraulics.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 20 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Exhaust Gas Vent & Oil Containment Trays</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Electronics & Microcontroller Lab -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 industrial-card">
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 h-72 sm:h-80">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Electronics & Microcontroller Lab" class="w-full h-full object-cover" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-md text-xs font-bold bg-teal-500 text-slate-950">Electronics Mechanic</span>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+              <h3 class="font-heading text-2xl font-bold text-white">Electronics & Microcontroller Lab</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Electrostatic discharge (ESD) protected workshop equipped with dual-channel Digital Storage Oscilloscopes (DSOs), temperature-regulated SMD rework stations, microcontroller development boards, and audio/video display diagnostic test rigs.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-sky-400 block mb-1">Key Equipment:</strong>
+                  <span class="text-slate-300">Digital Storage Oscilloscopes (DSO), SMD Hot-Air Rework, Function Generators, Arduino/8051 Kits.</span>
+                </div>
+                <div class="p-3 bg-slate-950/70 rounded-xl border border-slate-850">
+                  <strong class="text-emerald-400 block mb-1">Skills Learned:</strong>
+                  <span class="text-slate-300">SMD component soldering, waveform tracing, microcontroller programming, SMPS power repair.</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                <span><strong>Batch Capacity:</strong> 20 Trainees</span>
+                <span>•</span>
+                <span class="text-amber-400"><strong>Safety:</strong> Anti-Static ESD Wristbands & Mats</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Inspection & Tour CTA -->
+    <section class="py-16 bg-slate-900 border-b border-slate-800 text-center">
+      <div class="max-w-4xl mx-auto px-4 space-y-4">
+        <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white">
+          Inspect Our Workshops Before Enrolling
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
+          We welcome parents and students every working day to tour the workshops, observe active classes, and meet our senior instructors.
+        </p>
+        <div class="flex justify-center gap-4 pt-2">
+          <button type="button" data-modal-target="enquiry-modal" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs shadow-md hover:bg-sky-400 transition-all">
+            Book Guided Workshop Tour
+          </button>
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-800 text-slate-200 font-semibold text-xs border border-slate-700 transition-colors">
+            Get Campus Directions
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

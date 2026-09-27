@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48" fill="none">
+  <rect x="2" y="4" width="40" height="40" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1.5" />
+  <path d="M12 34L22 14L32 34H27L22 23.5L17 34H12Z" fill="#0EA5E9" />
+  <path d="M16 28H28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+  <circle cx="22" cy="19" r="2" fill="#F8FAFC" />
+  <text x="52" y="25" fill="#0F172A" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="18" letter-spacing="-0.5">AIS <tspan fill="#0EA5E9">ITI</tspan></text>
+  <text x="52" y="38" fill="#64748B" font-family="'Inter', sans-serif" font-weight="500" font-size="8.5" letter-spacing="1.2">INDUSTRIAL TRAINING INSTITUTE</text>
+</svg>

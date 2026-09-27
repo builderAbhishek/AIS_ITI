@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notice Board & Announcements — AIS Industrial Training Institute</title>
+  <meta name="description" content="Official notice board for AIS ITI: Admission notifications, All India Trade Test (AITT) schedules, holiday lists, apprentice drives, and campus circulars." />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 950: '#070D1E', 900: '#0B132B', 850: '#101B3B', 800: '#1C2541' },
+            electric: { 500: '#0EA5E9', 400: '#38BDF8' }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <header id="top-announcement-bar"></header>
+  <div id="main-navbar"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="relative bg-slate-950 text-white py-16 border-b border-slate-800 bg-tech-grid-dark overflow-hidden">
+      <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3 inline-block">
+          Official Communications
+        </span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Notice Board & Circulars
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
+          Stay updated with admission dates, examination schedules, workshop activities, and government apprentice notifications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter & Notices Section -->
+    <section class="py-16 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800">
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <button type="button" data-filter-notice="all" class="px-3.5 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-bold transition-all">All Circulars</button>
+            <button type="button" data-filter-notice="Admission" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Admissions</button>
+            <button type="button" data-filter-notice="Academic" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Examinations</button>
+            <button type="button" data-filter-notice="Industry" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Industrial Visits</button>
+            <button type="button" data-filter-notice="Apprenticeship" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white font-medium transition-all">Apprenticeship</button>
+          </div>
+
+          <div class="text-xs text-slate-400 font-mono">
+            Updated regularly
+          </div>
+        </div>
+
+        <!-- Notices List Container (Populated by js/filters.js) -->
+        <div id="notices-list-container" class="space-y-4">
+          <!-- Fallback or dynamic items -->
+        </div>
+
+        <!-- Replaceable Notice Note -->
+        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800 text-xs text-slate-400 text-center">
+          <strong>Demo Data Notice:</strong> Notice items above are demo circulars. Real institutions can update, add, or delete notices via <code class="text-sky-400">js/data.js</code>.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Important Academic Calendar Download Callout -->
+    <section class="py-16 bg-slate-900 border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="font-heading text-lg font-bold text-white">Need the Academic Calendar 2026–27?</h3>
+            <p class="text-xs text-slate-400">Contains semester test dates, practical exam windows, gazetted holidays, and sports weeks.</p>
+          </div>
+          <button type="button" data-modal-target="enquiry-modal" class="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs shrink-0 shadow-md transition-all">
+            Request Calendar PDF
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
